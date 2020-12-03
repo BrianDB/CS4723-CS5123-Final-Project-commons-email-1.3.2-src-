@@ -32,20 +32,5 @@ public class TestCaseOne extends TestCase{
         	assertEquals("b@c.com", testEmail.getCcAddresses().get(1).toString());
     	}
 
-    
-      	/**
-     	* testSend
-     	* sends an email and checks to see the subject of it
-     	* @throws EmailException
-     	*/
-    	public void testSend() throws EmailException {
-		System.out.println("Test to send an email - jyb___"); 
-        	testEmail.setHostName("utsa.com");
-        	testEmail.setFrom("a@b.com");
-        	testEmail.addTo("b@c.com"); 
-        	testEmail.setSubject("Subject");
-        	testEmail.send();
-        	assertEquals("Subject", testEmail.getSubject().toString()); 
-   	}
 
 }

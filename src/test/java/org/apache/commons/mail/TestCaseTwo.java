@@ -31,17 +31,4 @@ public class TestCaseTwo extends TestCase{
         	assertEquals("b@c.com", testEmail.getBccAddresses().get(1).toString()); 
     	}
 
-	/**
-     	* testGetMailSessionWithHostName
-     	* sets a hostname and gets the mail session, checks for an empty hostname
-     	* @throws EmailException
-    	*/
-    	public void testGetMailSessionWithHostName() throws EmailException {
-		System.out.println("Test to get a mail session - jyb___"); 
-        	testEmail.setHostName("utsa.com");
-        	testEmail.getMailSession(); 
-        	assertFalse(EmailUtils.isEmpty(testEmail.hostName)); 
-    	}
-
-
 }
