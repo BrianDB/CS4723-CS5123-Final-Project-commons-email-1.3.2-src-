@@ -39,7 +39,7 @@ public class TestCaseTwo extends TestCase{
     	*/
     	@Test
     	public void testGetMailSessionWithHostName() throws EmailException {
-		System.out.println("Test to get a mail session - jyb___")
+		System.out.println("Test to get a mail session - jyb___"); 
         	testEmail.setHostName("utsa.com");
         	testEmail.getMailSession(); 
         	assertFalse(EmailUtils.isEmpty(testEmail.hostName)); 
