@@ -13,5 +13,11 @@ pipeline {
       }
     }
 
+    stage('Delivery Stage') {
+      steps {
+        sh 'echo "jyb___ Delivery Stage"'
+      }
+    }
+
   }
 }
