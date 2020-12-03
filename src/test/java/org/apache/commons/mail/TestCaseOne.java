@@ -34,20 +34,6 @@ public class TestCaseOne extends TestCase{
     	}
 
 	/**
-     	* testAddHeader
-     	* Adds a new header, and checks if the header is in the header map
-     	* @throws IllegalArgumentException
-     	*/
-    	@Test
-    	public void testAddHeader() throws IllegalArgumentException {
-        	System.out.println("Test to add header - jyb___"); 
-		testEmail.addHeader("Header", "1");
-        	Map<String, String> hash = new HashMap<>(); 
-        	hash.put("Header", "1");
-        	assertEquals(hash, testEmail.headers); 
-    	}
-    
-	/**
      	* testGetSentDate
      	* checks to see if I can set the date
      	* also checks to see if I can set a null date
